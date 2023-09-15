@@ -1,0 +1,74 @@
+a {
+  color: #C1C4DC;
+  text-decoration: none;
+}
+
+.nav, .nav * {
+  box-sizing: border-box;
+  }
+
+.nav {
+    background: #121617;
+    padding: 23px 0px 23px 0px;
+    width: 240px;
+    height: 1024px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+  } 
+
+.nav_text {
+  color: #f7f8f8;
+  text-align: center;
+  font: 700 35px 'Inter', sans-serif;
+  margin-bottom: 45px;
+}
+
+.page {
+  padding-top: 100px;
+  height: 100%;
+  background-color: #DDDDE4;
+  margin-left: 240px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frame, .frame * {
+  box-sizing: border-box;
+  }
+  .frame {
+    padding: 15px 50px 15px 50px;
+    background: #6f6d88;
+    border-radius: 27px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: space-around;
+  } 
+
+.frame_carta {
+    background-color: #6f6d88;
+    padding-top: 25px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: var(--azuloscuro, #0d0e1b);
+    border-width: 1px;
+    width: 320px;
+    height: 550px;
+    margin: 0px 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font: 700 50px 'Inter', sans-serif; 
+}
+
+
+.triple_carta {
+  display: flex;
+  justify-content: space-around;
+}
