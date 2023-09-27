@@ -24,6 +24,13 @@ a {
   overflow: hidden;
 } 
 
+.nav a:hover {
+  background-color: #C1C4DC;
+  color: #0d0e1b;
+  border-radius: 5px;
+}
+
+
 .nav_text {
   color: #f7f8f8;
   text-align: center;
