@@ -24,18 +24,21 @@ a {
   overflow: hidden;
 } 
 
-.nav a:hover {
-  background-color: #C1C4DC;
-  color: #0d0e1b;
-  border-radius: 5px;
-}
-
-
 .nav_text {
   color: #f7f8f8;
   text-align: center;
   font: 700 35px 'Inter', sans-serif;
   margin-bottom: 45px;
+}
+
+.nav_este{
+  color: #f7f8f8;
+  text-align: center;
+  font: 700 35px 'Inter', sans-serif;
+  margin-bottom: 45px;
+  border-bottom: #48515B;
+  border: 4px;
+  border-bottom-style: solid;
 }
 
 .page {
@@ -53,6 +56,19 @@ a {
   box-sizing: border-box;
 }
 .frame {
+  padding: 15px 50px 15px 50px;
+  background: #6f6d88;
+  border-radius: 27px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-bottom: 70px;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 30px;
+} 
+
+.frame_integrantes {
   padding: 15px 50px 15px 50px;
   background: #6f6d88;
   border-radius: 27px;
@@ -122,4 +138,182 @@ a {
 
 .button_carta :hover {
   background-color: red;
+}
+
+.mobile_nav{
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  display: none;
+}
+
+.mobile_nav_triple_carta {
+  display: none;
+}
+
+.frame_carta_mobile{
+  display: none;
+}
+
+.font_titulo {
+  font: 700 65px 'Inter';
+  margin-top: 25px;
+}
+
+.font_texto {
+  font: 400 40px 'Inter';
+}
+
+ /* !!!!! DISEÑOS PARA CELULAR !!!!! */
+
+@media only screen and (max-width: 1366px) {
+  .nav{
+    justify-content: space-around;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    background-color: #121617;
+    height: 66px;
+    padding-top: 40px;
+  }
+
+  .page {
+    padding-top: 66px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .frame {
+    padding: 15px 50px 15px 50px;
+    background: #6f6d88;
+    border-radius: 27px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-bottom: 70px;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 20px;
+  } 
+
+  .frame_home {
+    padding: 15px 50px 15px 50px;
+    background: #6f6d88;
+    border-radius: 27px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 30px;
+  } 
+
+  .frame_integrantes {
+    display: none;
+  }
+
+  .triple_carta {
+    display: none;
+  }
+  
+  .mobile_nav_triple_carta {
+    margin-top: 66px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .frame_carta_mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background: #6f6d88;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 3% 25px;
+    font-size: 30px;
+    padding: 20px 50px;
+  }
+  
+  .circle_img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .font_titulo {
+    font: 700 65px 'Inter';
+    margin-top: 25px;
+  }
+  
+  .font_texto {
+    font: 400 40px 'Inter';
+  }
+
+}
+
+
+@media only screen and (max-width: 1030px) {
+  .nav_text {
+    font-size: 20px;
+  }
+
+  .nav_este {
+    font-size: 20px;
+    border: 3px;
+    border-bottom: #48515B;
+    border-bottom-style: solid;
+  }
+
+  .font_titulo {
+    font: 700 65px 'Inter';
+    margin-top: 25px;
+  }
+  
+  .font_texto {
+    font: 400 40px 'Inter';
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .nav_text {
+    font-size: 12px;
+  }
+
+  .nav_este {
+    font-size: 12px;
+    border: 2px;
+    border-bottom: #48515B;
+    border-bottom-style: solid;
+  }
+
+  .font_titulo {
+    font: 700 45px 'Inter';
+    margin-top: 0px;
+  }
+  
+  .font_texto {
+    font: 400 25px 'Inter';
+  }
+
+  .frame_carta_mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background: #6f6d88;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 3% 10px;
+    font-size: 20px;
+  }
 }
