@@ -238,7 +238,7 @@ a {
     align-items: center;
     justify-content: space-around;
     padding: 25px 3% 25px;
-    font-size: 30px;
+    font-size: 40px;
     padding: 20px 50px;
   }
   
@@ -314,6 +314,23 @@ a {
     align-items: center;
     justify-content: space-around;
     padding: 10px 3% 10px;
-    font-size: 20px;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .frame_carta_mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    background: #6f6d88;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 3% 10px;
+    font-size: 30px;
   }
 }
